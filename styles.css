@@ -833,3 +833,253 @@ footer {
         padding: 0 15px;
     }
 }
+
+/* Careers Page Styles */
+.careers-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+    color: var(--white);
+    text-align: center;
+    padding: 120px 0 80px;
+    height: auto !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.careers-image .image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.careers-image .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.careers-intro {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.careers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-item i {
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+.open-positions {
+    padding: 80px 0;
+}
+
+.positions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.position-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.position-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.position-header h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.position-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.positions-count {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.work-type {
+    background: var(--light-gray);
+    color: var(--text-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.position-content p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.requirements h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.requirements ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.requirements li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
+.requirements li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.apply-btn {
+    background: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.apply-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.application-process {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.application-process h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.step p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Active nav link styling */
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Responsive for Careers */
+@media (max-width: 768px) {
+    .careers-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+    
+    .positions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .position-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .position-meta {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}
